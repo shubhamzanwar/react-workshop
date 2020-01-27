@@ -1,33 +1,49 @@
 export const products = [{
-    name: "Pasta"
+    name: "Pasta",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/pasta.JPG"
 }, {
-    name: "Bread"
+    name: "Bread",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/bread.JPG"
 }, {
-    name: "Breakfast cereal"
+    name: "Breakfast cereal",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/cereal.JPG"
 }, {
-    name: "Butter"
+    name: "Butter",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/butter.JPG"
 }, {
-    name: "Milk"
+    name: "Milk",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/milk.JPG"
 }, {
-    name: "Eggs"
+    name: "Eggs",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/eggs.JPG"
 }, {
-    name: "Cheese"
+    name: "Cheese",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/cheese.JPG"
 }, {
-    name: "Onions"
+    name: "Onions",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/onions.JPG"
 }, {
-    name: "Banana"
+    name: "Banana",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/banana.JPG"
 }, {
-    name: "Apples"
+    name: "Apples",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/apples.JPG"
 }, {
-    name: "Kiwi"
+    name: "Kiwi",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/kiwi.JPG"
 }, {
-    name: "Tomatoes"
+    name: "Tomatoes",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/tomato.JPG"
 }, {
-    name: "Avocado"
+    name: "Avocado",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/avacado.JPG"
 }, {
-    name: "Honey"
+    name: "Honey",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/honey.JPG"
 }, {
-    name: "Watermelon"
+    name: "Watermelon",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/watermelon.JPG"
 }, {
-    name: "Chicken"
+    name: "Chicken",
+    image: "https://gdg-react-workshop.s3.amazonaws.com/chicken.JPG"
 }];

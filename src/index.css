@@ -42,9 +42,14 @@ code {
   padding: 2rem 2rem;
 }
 
+.product-image {
+  width: 80%;
+}
+
 .product {
   background: #ccc;
   display: flex;
+  padding: 2rem 0;
   flex-direction: column;
   align-items: center;
 }

@@ -33,6 +33,7 @@ class App extends React.Component {
                     return (
                         <div className="product-wrapper">
                             <div className="product">
+                                <img src={product.image} alt="" className="product-image" />
                                 {product.name}
                                 <div className="counter" role="group">
                                     <button type="button" onClick={this.decrementCount(product.name)} className="counter-btn">-</button>
