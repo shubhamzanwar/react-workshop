@@ -13,6 +13,7 @@ code {
 }
 
 .counter {
+  margin-top: 1rem;
   display: flex;
 }
 
@@ -27,4 +28,23 @@ code {
   background: #444;
   color: #fff;
   border: 0;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: auto;
+}
+
+.product-wrapper {
+  width: 25%;
+  padding: 2rem 2rem;
+}
+
+.product {
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

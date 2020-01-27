@@ -1,28 +1,50 @@
 import React from 'react';
+import { products } from './mockData/products';
 
 class App extends React.Component {
     state = {
-        count: 0
+        productsCount: {}
     }
 
-    increment = () => {
-        const oldCount = this.state.count;
-        this.setState({count: oldCount + 1});
+    incrementCount = (productName) => () => {
+        const oldProductsCount = this.state.productsCount;
+        const desiredProductCount = (oldProductsCount[productName] || 0) + 1;
+        this.setState({
+            productsCount: {
+                ...oldProductsCount, 
+                [productName]: desiredProductCount
+            }
+        });
     }
 
-    decrement = () => {
-        const oldCount = this.state.count;
-        this.setState({count: Math.max(oldCount - 1, 0)});
+    decrementCount = (productName) => () => {
+        const oldProductsCount = this.state.productsCount;
+        const desiredProductCount = Math.max(oldProductsCount[productName] - 1, 0);
+        this.setState({productsCount: {
+            ...oldProductsCount, 
+            [productName]: desiredProductCount
+        }});
     }
 
-    render() {
+    render = () => {
         return (
-            <div class="counter" role="group">
-                <button type="button" onClick={this.decrement} class="counter-btn">-</button>
-                <div class="counter-text">{this.state.count}</div>
-                <button type="button" onClick={this.increment} class="counter-btn">+</button>
+            <div className="product-grid">
+                {products.map((product) => {
+                    return (
+                        <div className="product-wrapper">
+                            <div className="product">
+                                {product.name}
+                                <div className="counter" role="group">
+                                    <button type="button" onClick={this.decrementCount(product.name)} className="counter-btn">-</button>
+                                    <div className="counter-text">{this.state.productsCount[product.name] || 0}</div>
+                                    <button type="button" onClick={this.incrementCount(product.name)} className="counter-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
-        )
+        );
     }
 }
 

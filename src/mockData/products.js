@@ -1,5 +1,33 @@
 export const products = [{
-    name: "Playstation 4"
+    name: "Pasta"
 }, {
-    name: ""
-}]
+    name: "Bread"
+}, {
+    name: "Breakfast cereal"
+}, {
+    name: "Butter"
+}, {
+    name: "Milk"
+}, {
+    name: "Eggs"
+}, {
+    name: "Cheese"
+}, {
+    name: "Onions"
+}, {
+    name: "Banana"
+}, {
+    name: "Apples"
+}, {
+    name: "Kiwi"
+}, {
+    name: "Tomatoes"
+}, {
+    name: "Avocado"
+}, {
+    name: "Honey"
+}, {
+    name: "Watermelon"
+}, {
+    name: "Chicken"
+}];
