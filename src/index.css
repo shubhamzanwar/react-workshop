@@ -18,6 +18,23 @@ code {
   overflow-y: auto;
 }
 
+.app-header {
+  padding: 0 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px #000b;
+}
+
+.show-cart-btn {
+  background: none;
+  border: 0;
+  outline: 0;
+  background: #444;
+  color: white;
+  padding: 1rem;
+}
+
 .counter {
   margin-top: 1rem;
   display: flex;

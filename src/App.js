@@ -27,11 +27,18 @@ class App extends React.Component {
         }});
     }
 
+    showCart = () => {
+        this.setState({displayCart: true});
+    }
+
     render = () => {
         const cartClass = this.state.displayCart ? "cart cart-active" : "cart";
         return (
             <div className="app">
-                <button onClick={() => this.setState({displayCart: true})}>show cart</button>
+                <header className="app-header">
+                    <div className="logo">React Shopping</div>
+                    <button className="show-cart-btn" onClick={this.showCart}>Cart</button>
+                </header>
                 <div className="product-grid">
                     {products.map((product) => {
                         return (
