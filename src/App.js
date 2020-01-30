@@ -31,6 +31,10 @@ class App extends React.Component {
         this.setState({displayCart: true});
     }
 
+    hideCart = () => {
+        this.setState({displayCart: false});
+    }
+
     render = () => {
         const cartClass = this.state.displayCart ? "cart cart-active" : "cart";
         return (
@@ -57,7 +61,10 @@ class App extends React.Component {
                     })}
                 </div>
                 <div className={cartClass}>
-
+                    <header className="app-header">
+                        <div className="logo">Cart</div>
+                        <button className="show-cart-btn" onClick={this.hideCart}>Close</button>
+                    </header>
                 </div>
             </div>
         );
