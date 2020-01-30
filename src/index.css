@@ -26,6 +26,7 @@ code {
   box-shadow: 0 0 10px #000b;
 }
 
+.cart-btn,
 .show-cart-btn {
   background: none;
   border: 0;
@@ -84,6 +85,7 @@ code {
   right: 0;
   top: 0;
   background: #333;
+  color: #fff;
 
   transform: translateX(100%);
 
@@ -92,4 +94,22 @@ code {
 
 .cart-active {
   transform: translateX(0);
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-logo {
+  padding-left: 1rem;
+}
+
+.card-body {
+  padding: 2rem 1rem 0;
+}
+
+.cart-product-row {
+  
 }

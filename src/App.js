@@ -61,10 +61,24 @@ class App extends React.Component {
                     })}
                 </div>
                 <div className={cartClass}>
-                    <header className="app-header">
-                        <div className="logo">Cart</div>
-                        <button className="show-cart-btn" onClick={this.hideCart}>Close</button>
+                    <header className="cart-header">
+                        <div className="cart-logo">Shopping Cart</div>
+                        <button className="cart-btn" onClick={this.hideCart}>Close</button>
                     </header>
+                    <div className="card-body">
+                        {
+                            Object.keys(this.state.productsCount)
+                            .map((product) => {
+                                return (
+                                    <div className="cart-product-row">
+                                        <div className="product-row-title">
+                                            {product} x {this.state.productsCount[product]}
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         );
